@@ -16,6 +16,8 @@
     --box4:#EBFAFF;
     --box5:#F0FFF5;
     --box6:#F2F4FF;
+    --box7:#ECE7FF;
+    --box8:#FFEADF;
 
   
 
@@ -84,6 +86,15 @@
 .bg-box6{
     background-color: var(--box6);
 }
+.bg-box7{
+    background-color: var(--box7);
+}
+.bg-box8{
+    background-color: var(--box8);
+}
+
+
+
 .bg-light1{
     background: var(--light-background);
 }
