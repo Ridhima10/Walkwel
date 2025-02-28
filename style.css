@@ -322,6 +322,11 @@ font-size: 0.8rem;
 .why-choose .card{
     backdrop-filter: blur(24px);
 }
-.why-choose h2,.why-choose h5{
+.why-choose h3,.why-choose h5{
     opacity: 70%;
+}
+.background-section {
+    background: url('images/logo-bg.png') no-repeat center;
+    background-size: contain;
+    padding: -8px 0;
 }
