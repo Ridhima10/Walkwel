@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkwel Technologies</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container d-flex justify-content-between">
+
+            <a class="navbar-brand" href="#"><img src="images/logo.png" height="35" alt="Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-2">
+
+                    <!-- Services Dropdown -->
+                    <li class="nav-item mx-2 dropdown position-static">
+                        <a class="nav-link text-blue fw-semibold " href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu custom-dropdown p-3 border-0 shadow-lg rounded-3 w-100 m-2"
+                            aria-labelledby="servicesDropdown" style="max-width: 90vw;">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+
+                                    <!-- Service 1 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 blue-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-1.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Mobile App Development</h6>
+                                                <p class="text-muted mt-2 ">Mobile App solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 2 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 orange-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-2.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">UI/UX Design Solutions</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 3 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 green-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-3.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Web Application Development</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 4 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div
+                                                class="position-absolute rounded top-0 light-blue-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-4.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Software Testing and QA</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 5 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 yellow-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-5.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Blockchain Technology</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 6 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 blue-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-6.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Data Analytics and Cloud Solutions
+                                                </h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 7 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 orange-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-7.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">DevOps as a Service</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                    <!-- Service 8 -->
+                                    <a href="#" class="text-decoration-none">
+                                        <!-- <div class=""> -->
+                                        <div class="col card  border-0  shadow-sm  h-100">
+                                            <div class="position-absolute rounded top-0 green-gradient w-100 h-25 z-0">
+                                            </div>
+                                            <div class="z-1 img-box">
+                                                <img src="images/icon-8.svg" width="40" class="me-2" alt="icon">
+                                            </div>
+                                            <div class="px-3 pt-5 d-flex flex-column dropdown-content">
+                                                <h6 class="mb-0 fw-bold text-font1">Branding and Digital Marketing
+                                                    Services</h6>
+                                                <p class="text-muted mt-2 ">Mobile App Solutions tailored as per your
+                                                    needs & requirements. We care about you & your ideas. We execute all
+                                                    your ideas into reality.</p>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link  text-blue fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Industries
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown p-3 border-0 shadow rounded-3">
+                            <li><a class="dropdown-item py-2" href="#">Fintech</a></li>
+                            <li><a class="dropdown-item  py-2" href="#">E-commerce</a></li>
+                            <li><a class="dropdown-item  py-2" href="#">GovTech</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-blue fw-semibold" href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-blue fw-semibold" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-blue fw-semibold" href="#">Career</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-blue fw-semibold" href="#">Blogs</a>
+                    </li>
+                </ul>
+
+                <!-- Contact Us Button -->
+                <button class="btn btn-1 bg-blue text-white px-4 py-2 rounded-1 fw-semibold" type="submit">Contact
+                    Us</button>
+            </div>
+        </div>
+    </nav>
+    <header class="header-section d-flex align-items-center justify-content-center position-relative">
+        <img src="images/header-img.png" class="header-img position-absolute top-0 start-0 object-fit-cover"
+            alt="Header Image">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-lg-6 col-md-8 col-10 header-wrapper position-relative text-start  d-flex flex-column align-items-start text-white ">
+                    <p class="heading  text-font1 lh-1">Embrace the Future of</p>
+                    <p class="heading  fst-italic text-font1 lh-1">Digital Innovation</p>
+                    <p class="fs-5 lh-base para">
+                        Transform Your Business with Our Cutting-Edge Solutions and Seamless Execution
+                    </p>
+                    <button class="btn btn-1 my-2 text-white bg-blue border border-0 px-4 py-2 fw-semibold"
+                        type="submit">Talk to Expert</button>
+                </div>
+            </div>
+            <div class="row mt-lg-5 pt-lg-5">
+                <div class="col-lg-12 col-md-8 col-10 text-start d-flex flex-column align-items-start text-white">
+                    <p class="fs-5">Partnered with:</p>
+                    <div class="partner-slider">
+                        <div class="partner-track">
+                            <img src="images/partner1.svg" class="img-fluid partner-logo" alt="Partner 1">
+                            <img src="images/partner2.svg" class="img-fluid partner-logo" alt="Partner 2">
+                            <img src="images/partner3.svg" class="img-fluid partner-logo" alt="Partner 3">
+                            <img src="images/partner4.svg" class="img-fluid partner-logo" alt="Partner 4">
+                            <img src="images/partner5.svg" class="img-fluid partner-logo" alt="Partner 5">
+                            <img src="images/partner6.svg" class="img-fluid partner-logo" alt="Partner 6">
+
+                            <!-- Duplicate images for smooth loop -->
+                            <img src="images/partner1.svg" class="img-fluid partner-logo" alt="Partner 1">
+                            <img src="images/partner2.svg" class="img-fluid partner-logo" alt="Partner 2">
+                            <img src="images/partner3.svg" class="img-fluid partner-logo" alt="Partner 3">
+                            <img src="images/partner4.svg" class="img-fluid partner-logo" alt="Partner 4">
+                            <img src="images/partner5.svg" class="img-fluid partner-logo" alt="Partner 5">
+                            <img src="images/partner6.svg" class="img-fluid partner-logo" alt="Partner 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <section class="container my-lg-5 my-5 py-3 py-lg-5 d-flex justify-content-center">
+        <div class="row para-section">
+            <p class="text-blue text-font1 text-center fw-lighter fs-1 lh-1">At Walkwel, we blend innovation, expertise,
+                and passion to craft solutions tailored to meet your unique
+                business goals. With a <span class="fw-bold">customer-centric</span> <span class="text-gray"> approach
+                    and cutting-edge technology, we drive digital
+                    transformation, ensuring efficiency, scalability, and long-term success.</span></p>
+        </div>
+
+    </section> -->
+    <section
+        class="section-1 container my-lg-5 my-5 py-3 py-lg-5 d-flex justify-content-center align-items-center section-lock">
+        <div class="row para-section">
+            <p class="text-blue text-font1 text-center fw-lighter fs-1 lh-1">
+                At Walkwel, we blend innovation, expertise, and passion to craft solutions tailored to meet your unique
+                business goals. With a <span class="fw-bold">customer-centric</span>
+                <span class="text-gray change-color fw-bold"> approach and cutting-edge technology, we drive digital
+                    transformation, ensuring efficiency, scalability, and long-term success.
+                </span>
+            </p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="text-center my-5 py-5">
+                <h1 class="text-blue text-font1">Services We Offer</h1>
+                <p class="fs-5 text-dark-gray">Trusted by clients worldwide, we’re committed to turning your ideas into
+                    reality.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card box h-100 d-flex flex-column p-4 curve-top-left bg-box1 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">01</h1>
+                            <h3 class="card-text me-auto text-font1 fw-semibold lh-sm">Intelligent Software Solutions</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Building smart, scalable, and automated software tailored to
+                                modern business needs.</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card p-4 box rounded-0 bg-box2 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">02</h1>
+                            <h3 class="card-text me-auto text-font1 fw-semibold lh-sm">Next-Gen Web & Mobile Applications</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Crafting high-performance digital experiences with advanced automation and personalization.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card box p-4 curve-top-right bg-box3 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">03</h1>
+                            <h3 class="card-text me-auto lh-sm text-font1 fw-semibold ">Blockchain & Secure Digital Solutions</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Enhancing security, transparency, and efficiency with blockchain and decentralized applications.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 ">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card box p-4 curve-bottom-left bg-box4 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">04</h1>
+                            <h3 class="card-text me-auto lh-sm text-font1 fw-semibold ">Cloud & DevOps Transformation</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Optimizing infrastructure with automation, seamless deployments, and efficient cloud management.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card box p-4 rounded-0 bg-box5 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">05</h1>
+                            <h3 class="card-text me-auto lh-sm text-font1 fw-semibold ">Conversational & Interactive Experiences</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Creating chatbots, voice assistants, and smart interfaces for engaging user interactions.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12 p-0">
+                    <div class="card box p-4 curve-bottom-right bg-box6 border-0">
+                        <div class="card-body d-flex flex-column">
+                            <h1 class="card-title text-font1 fw-light">06</h1>
+                            <h3 class="card-text me-auto lh-sm text-font1 fw-semibold ">Data-Driven UI/UX & Analytics</h3>
+                            <h6 class="text-dark1 mt-auto fw-normal">Designing intuitive experiences backed by insights, behavior analysis, and predictive trends.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="why-choose">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="text-blue text-font1">Why Choose Walkwel?</h1>
+                <p class="fs-5 text-dark-gray">Trusted by clients worldwide, we’re committed to turning your ideas into reality.</p>
+            </div>
+                <div class="card border-0  p-4 bg-light1 rounded-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="d-flex pe-lg-5">
+                            <img src="images/choose1.svg" alt="Icon" class="me-3" width="40">
+                            <h2 class="fs-3 text-dark1 me-4 mb-0 fw-normal">Proven Expertise</h2>
+                        </div>
+                        <div class="">
+                            <h5 class="fs-5 text-dark-gray mb-0 w-75 fw-normal text-start">Backed by years of experience, we deliver reliable and high-quality solutions across industries.</h5>
+                        </div>
+                        <div>
+                            <!-- <button type="submit"></button> -->
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card border-0  p-4 bg-light1 rounded-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="d-flex pe-lg-5">
+                            <img src="images/choose1.svg" alt="Icon" class="me-3" width="40">
+                            <h2 class="fs-3 text-dark1 me-4 mb-0 fw-normal">Proven Expertise</h2>
+                        </div>
+                        <div class="">
+                            <h5 class="fs-5 text-dark-gray mb-0 w-75 fw-normal text-start">Backed by years of experience, we deliver reliable and high-quality solutions across industries.</h5>
+                        </div>
+                        <div>
+                            <!-- <button type="submit"></button> -->
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card border-0  p-4 bg-light1 rounded-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="d-flex pe-lg-5">
+                            <img src="images/choose1.svg" alt="Icon" class="me-3" width="40">
+                            <h2 class="fs-3 text-dark1 me-4 mb-0 fw-normal">Proven Expertise</h2>
+                        </div>
+                        <div class="">
+                            <h5 class="fs-5 text-dark-gray mb-0 w-75 fw-normal text-start">Backed by years of experience, we deliver reliable and high-quality solutions across industries.</h5>
+                        </div>
+                        <div>
+                            <!-- <button type="submit"></button> -->
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card border-0  p-4 bg-light1 rounded-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="d-flex pe-lg-5">
+                            <img src="images/choose1.svg" alt="Icon" class="me-3" width="40">
+                            <h2 class="fs-3 text-dark1 me-4 mb-0 fw-normal">Proven Expertise</h2>
+                        </div>
+                        <div class="">
+                            <h5 class="fs-5 text-dark-gray mb-0 w-75 fw-normal text-start">Backed by years of experience, we deliver reliable and high-quality solutions across industries.</h5>
+                        </div>
+                        <div>
+                            <!-- <button type="submit"></button> -->
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </div>
+            
+    </section>
+    <section class="team-section my-5 py-5">
+        <div class="d-flex justify-content-between text-start container flex">
+            <div class="m-3 ">
+                <h2 class="text-font1 fw-normal fs-1">Meet The Team</h2>
+                <p class="text-dark-gray fw-medium">Trusted by clients worldwide, we’re committed to turning your ideas into reality.</p>
+            </div>
+            <div class="m-3">
+                <a href="#" class="view-all-btn">View All Team Members</a>
+            </div>
+        </div>
+        <div id="teamCarousel" class="carousel container">
+            <div class="carousel-inner">
+                <!-- First Set of Items -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team1.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team2.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team3.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team4.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team5.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team6.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team7.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team8.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team9.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team10.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team11.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team4.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                </div>
+
+                <!-- Duplicate Set of Items -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team1.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team2.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team3.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team4.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team5.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team6.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team7.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team8.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team9.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team10.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team11.png" alt="Team Member"
+                                class="img-fluid"></div>
+                        <div class="col-lg-3 col-md-6 col-12"><img src="images/team4.png" alt="Team Member"
+                                class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shadow-effect">
+                <img src="images/white-shadow.png" alt="Shadow Effect">
+            </div>
+        </div>
+    </section>
+  
+
+
+
+    <!-- <script>
+        function wrapWords(selector) {
+            let element = document.querySelector(selector);
+            let words = element.innerText.split(" ");
+            element.innerHTML = words.map(word => `<span class="word" style="color: rgba(221, 221, 221, 1);">${word} </span>`).join("");
+        }
+    
+        wrapWords(".change-color"); // Wrap words inside spans
+    
+        const words = document.querySelectorAll(".change-color .word");
+        let index = 0;
+        let wordsPerScroll = 3; // Number of words to change per scroll
+    
+        function updateColors(forward) {
+            let limit = forward ? words.length : 0;
+    
+            for (let i = 0; i < wordsPerScroll; i++) {
+                if (forward && index < limit) {
+                    gsap.to(words[index], { color: "#0d47a1", duration: 0.2, ease: "power1.out" });
+                    index++;
+                } else if (!forward && index > limit) {
+                    index--;
+                    gsap.to(words[index], { color: "rgba(221, 221, 221, 1)", duration: 0.2, ease: "power1.out" });
+                }
+            }
+        }
+    
+        window.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            updateColors(event.deltaY > 0);
+        }, { passive: false });
+    </script> -->
+
+    <script>
+        function wrapWords(selector) {
+            let element = document.querySelector(selector);
+            let words = element.innerText.split(" ");
+            element.innerHTML = words.map(word => `<span class="word" style="color: rgba(221, 221, 221, 1);">${word} </span>`).join("");
+        }
+
+        wrapWords(".change-color");
+
+        const words = document.querySelectorAll(".change-color .word");
+        let index = 0;
+        let wordsPerScroll = 3;
+        let sectionLocked = false;
+        let lastScrollTop = window.scrollY;
+
+        function updateColors(forward) {
+            let limit = forward ? words.length : 0;
+
+            for (let i = 0; i < wordsPerScroll; i++) {
+                if (forward && index < limit) {
+                    gsap.to(words[index], { color: "#2E3C91", duration: 0.2, ease: "power1.out" });
+                    index++;
+                } else if (!forward && index > limit) {
+                    index--;
+                    gsap.to(words[index], { color: "rgba(221, 221, 221, 1)", duration: 0.2, ease: "power1.out" });
+                }
+            }
+
+            // Unlock scrolling when all words are colored
+            if (index === words.length) {
+                sectionLocked = false;
+                document.removeEventListener("wheel", preventScroll);
+            }
+        }
+
+        function preventScroll(event) {
+            if (sectionLocked) {
+                event.preventDefault();
+            }
+        }
+
+        window.addEventListener("scroll", () => {
+            let section = document.querySelector(".section-lock");
+            let rect = section.getBoundingClientRect();
+            let currentScroll = window.scrollY;
+
+            // Detect if scrolling down (top to bottom)
+            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2 && currentScroll > lastScrollTop) {
+                sectionLocked = true;
+                document.addEventListener("wheel", preventScroll, { passive: false });
+            }
+            // Unlock scrolling when coming from bottom to top or all words are colored
+            else if (currentScroll < lastScrollTop || index === words.length) {
+                sectionLocked = false;
+                document.removeEventListener("wheel", preventScroll);
+            }
+
+            lastScrollTop = currentScroll;
+        });
+
+        window.addEventListener("wheel", (event) => {
+            if (sectionLocked) {
+                event.preventDefault();
+                updateColors(event.deltaY > 0);
+            }
+        }, { passive: false });
+    </script>
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
